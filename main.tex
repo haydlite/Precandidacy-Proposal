@@ -249,7 +249,10 @@ The ``alt-right” are a loosely connected group of individuals who predominantl
 \cite{sternProudBoysWhite2019, mainRiseAltRight2018, nagleKillAllNormies2017, hawleyMakingSenseAltright2017}. 
 This description is incomplete and a simplification for
 many reasons; for example, ``alt-right'' is applied as a label inconsistently by supporters and observers alike \cite{hawleyMakingSenseAltright2017}. Perhaps most importantly, the phrase `"the ``alt-right''" suggests a monolithic collective \cite{massanariRethinkingResearchEthics2018}, which fails to capture the dispersed and disorganized \cite{martinDissectingTrumpMost2017} nature of the ``alt-right'', a 'movement' with no formal membership nor accepted leaders \cite{hawleyMakingSenseAltright2017}. Additionally, experts are skeptical that those who label themselves "alt-right" have discernible shared traits aside from those attributed to white supremacists
-\cite{gallaherMainstreamingWhiteSupremacy2020, johndaniszewskiWritingAltright2016}. These caveats in mind, literature surrounding the ``alt-right” can be divided into two categories: One strand describes the ``alt-right'' as part
+\cite{gallaherMainstreamingWhiteSupremacy2020, johndaniszewskiWritingAltright2016}. (Given the number of
+overlapping descriptors related to the “alt-right”,  \ref{table:key-identifiers}
+summarizes key groups to help clarify and contrast them from one
+another.)  These caveats in mind, literature surrounding the ``alt-right” can be divided into two categories: One strand describes the ``alt-right'' as part
 of a larger global phenomenon where far-right ideology have been
 amassing legitimacy and power through populist politics \cite{cammaertsMainstreamingExtremeRightWing2018, worthMorbidSymptomsGlobal2019}. Another positions the
 ``alt-right” as the internet-age reincarnation of white nationalists
@@ -260,10 +263,7 @@ Andrew Anglin, a prominent “alt-right” figure, describes the “alt-right”
 as a movement that came out of various internet subcultures (e.g. troll
 culture, conspiracy theorism, the manosphere); he states that, while a
 simplification, the “alt-right” can be understood as a reboot of earlier
-white nationalist movements \cite{andrewanglinNormieGuideAltRight}. (Given the number of
-overlapping descriptors related to the “alt-right”, Table 1 lists and
-summarizes key groups to help clarify and contrast them from one
-another. ) For the most part, scholars agree with Anglin.
+white nationalist movements \cite{andrewanglinNormieGuideAltRight}. For the most part, scholars agree with Anglin.
 However, experts clash in their portrayals of the \textit{essence} of the ``alt-right''\cite{forscherPsychologicalProfileAltRight2020}. Some assert that the “alt-right” “is fundamentally concerned
 with race” \cite{hawleyMakingSenseAltright2017}. Others emphasize that the ``alt-right” is a white
 \textit{male} \footnote{Important to note that despite the misogyny present in
@@ -294,9 +294,36 @@ savvy \cite{sternProudBoysWhite2019, nagleKillAllNormies2017, gallaherMainstream
 
 \medskip
 
-\hl{[Still-in-progress: Table delineating distinction between various phrases + different factions. 
-Planning to include: ``Alt-right'', ``Alt-lite", Pro-White, White Supremacist, White Nationalist, Far Right
-Are there other labels I'm forgetting?)]}
+
+\begin{table*}
+
+  \caption{Distinctions between Key Identifiers}
+  \label{table:key-identifiers}
+  
+  \begin{tabular}{ p{4cm}  p{4cm}  p{4cm} }
+  
+    \toprule
+     Identifier & Description &  Additional Notes\\ 
+    \midrule
+ Average Degree & Average number of edges per community node & How many connections can we expect a user to have? \\ 
+ \hline
+ Internal Density & Fraction of edges that appear between two community nodes & How connected are users to this community as opposed to outside groups?\\
+  \hline
+ Expansion & Fraction of edges connecting nodes to non-community nodes & How connected are users to non-community users as opposed to same-community ones?\\
+  \hline
+ Average Geodesic Length & Average distance between two community nodes & Would information travel travel quickly from one community user to another, randomly selected one?\\
+  \hline
+ Clustering Coefficient & Fraction of ``closed'' community node triplets & How likely is it that three users within a community are all connected to one another?\\
+  \hline
+ Conductance & Probability that of a one-step random walk starting on a community node going outside the community & How likely is it that information is traveling outside the community? \\
+  \hline
+ Cut Ratio & Fraction of edges pointing outside the community over possible edges pointing outside & Do users make an active effort to engage with those in different communities?\\
+   \bottomrule
+\end{tabular}
+\end{table*}
+
+
+
 
 \medskip
 
@@ -426,7 +453,7 @@ I construct three distinct undirected graphs that will represent my data as a so
 
 \section{Community Snapshots}
 
-In this section, I detail how I investigate the various communities' characteristics (RQ1) and their relationships with one another (RQ1a). I do this both by examining the communities' graph structures (topologically) and their language use.
+In this section, I detail how I investigate the various communities' characteristics (RQ1) and their relationships with one another (RQ2). I do this both by examining the communities' graph structures (topologically) and their language use.
 
 For all analysis, I utilize parametric bootstrap sampling \cite{gentzkowMeasuringGroupDifferences2019} to account for finite sample bias and obtain confidence levels for any reported statistics.
 
@@ -504,12 +531,6 @@ I define an \textit{AR idea} as a unigram, bigram, or hashtag that has no or few
 
 My inquiry into AR idea diffusion is best understood in three steps. I outline them here and go into greater detail in later subsections.
 
-\begin{enumerate}
-    \item I determine ideas with origins in the AR community.
-    \item I model how ideas travel from one community to another using a multivariate Hawkes process. This model will delineate how much influence the various communities have over each other (e.g. How does what the general public talk about affect what the AR talk about?), helping determine whether the AL serve as a "conduit" for AR ideas.
-    \item I predict whether an idea with origins in the AR will make a later appearance in the general public's discourse using an estimated logistic regression model. Inspecting this model will both complement findings from the Hawkes process model and identify non-community-related factors that play into AR idea diffusion.
-\end{enumerate}
-
 \subsection{Detecting AR Ideas}
 
 I identify unigrams, bigrams, and hashtags as \textit{AR ideas} if they meet two criteria: (1) they have no or few previous appearances in the dataset prior to being used by a sizeable amount of AR community members; (2) they are not used by non-AR community members at the time of their first appearance in the data.
@@ -535,6 +556,13 @@ As I will infer from the fitted model, I will ascertain that the logistic regres
 
 I will calculate $\chi^2$ statistics for each feature in my fitted model to understand their relative importance. Features with a greater $\chi^2$ statistic will be understood as a more influential mechanism in predicting whether an AR idea is mainstreamed.
 
+\begin{enumerate}
+    \item I determine ideas with origins in the AR community.
+    \item I model how ideas travel from one community to another using a multivariate Hawkes process. This model will delineate how much influence the various communities have over each other (e.g. How does what the general public talk about affect what the AR talk about?), helping determine whether the AL serve as a "conduit" for AR ideas.
+    \item I predict whether an idea with origins in the AR will make a later appearance in the general public's discourse using an estimated logistic regression model. Inspecting this model will both complement findings from the Hawkes process model and identify non-community-related factors that play into AR idea diffusion.
+\end{enumerate}
+
+
 \begin{table}[htbp!]
 
   \caption{Planned Checkpoint Completion Dates}
@@ -558,6 +586,12 @@ July 10, 2020 & Describe, compare, contrast, and visualize community topological
   August 2, 2020 &  Model AR idea diffusion as a Hawkes process\\
   \hline
   August 10, 2020 & Predict diffusion via a logistic regression model\\
+    \hline
+  August 20, 2020 & Write results section of paper\\
+      \hline
+  August 30, 2020 & Write discussion section of paper\\
+        \hline
+  September 15, 2020 & Write first draft of paper\\
    \bottomrule
 \end{tabular}
 \end{table}
@@ -567,6 +601,8 @@ July 10, 2020 & Describe, compare, contrast, and visualize community topological
 Table \ref{table:timetable} describes my planned timeline for this projects' data collection and analysis procedures.
 
 In brief, I plan to complete data collection and pre-processing by the end of June; I will spend most of July performing the analyses described in the ``Community Snapshots'' section; I dedicate the latter part of July along with the initial weeks of August to exploring diffusion of AR ideas.
+
+\clearpage
 
 \bibliography{references}
 
