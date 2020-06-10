@@ -107,16 +107,20 @@ Twitter as a Diffusion Channel for ``Alt-Right'' Ideas}
 }
 \maketitle
 
-\todototoc{}
 \listoftodos{}
 
+\todo[inline, color=blue!55]{Standardize quotation mark use.}
+\todo[inline, color=blue!55]{Add in citations.}
+
 \section{Introduction}
+
+
 
 The "alt-right"\footnote{§2.1 discusses the stylistic choice of quotation marks
 here.} has an inordinate influence on
 American political discourse \cite{,
 brydenUnderlyingSociopoliticalProcesses2019,
-schreckingerAltRightComesWashington}. This calls for concern, not only because
+schreckingerAltRightComesWashington}. This is a cause for concern, not only because
 the movement has motivated a number of terrorist acts
 \cite{laqueurFutureTerrorismISIS2018, bjorgoExtremeRightViolenceTerrorism,
 castleWhiteRacialActivism2020}, but also as their
@@ -154,7 +158,7 @@ He arrived at 6\% by filtering for non-Hispanic white responses to the 2016
 American National Election Survey (ANES) then determining the ratio of
 responses where “a strong sense of white identity”, “a belief in the importance
 of white solidarity”, and “a sense of white victimization” were all rated as
-“very” or “extremely” important. In addition to the 6\% who gave those items a
+“very” or “extremely” important. In addition to the 6\% who gave all of those items a
 high importance rating, many respondents agreed with at least one of the three
 statements: 28\% held a strong sense of white identity, 38\% believed in the
 importance of white solidarity, and 27\% held a sense of white victimization. A
@@ -185,8 +189,7 @@ lite"}
 leaders and scholars
 speculate that that the ``alt-lite'' are a potential conduit through which the
 “alt-right” can reach a wider audience and, consequently, grow their cultural
-influence. Though several scholarly works
-consider the "alt-right" \cite{mainRiseAltRight2018,
+influence. Though many scholarly works attend to consider the "alt-right" \cite{mainRiseAltRight2018,
 hawleyMakingSenseAltright2017, nagleKillAllNormies2017}
 and related matters such as their mainstreaming
 efforts \cite{gallaherMainstreamingWhiteSupremacy2020} and its effect on public
@@ -218,15 +221,15 @@ I will address:
 	      	\item communities’ networks’ (represented as graphs) exterior pointing edges
 	      	      (i.e. edges that connect community users to non-community users) and
 	      	      overlapping users (individuals who are members of multiple communities)
-	      	\item a Hawkes process capturing Twitter as a multi-speaker
+	      	\item Hawkes processes capturing Twitter as a multi-speaker
 	      	      conversation
 	      \end{itemize}
-	\item RQ3 by hypothesis testing the parameters of
+	\item RQ3 by considering "ideas" as different units of speech (words, n-grams, hashtags, topic models, and frames as depicted by word embeddings) and hypothesis testing the parameters of
 	      \begin{itemize}
-	      	\item the Hawkes
-	      	      process to determine which communities hold influence in another
+	      	\item Hawkes
+	      	      processes to determine which communities hold influence in another
 	      	      communities’ discourse
-	      	\item a logistic regression predicting diffusion of an idea from
+	      	\item logistic regressions predicting diffusion of ideas from
 	      	      ``alt-right” discourse to general public discourse to pinpoint and compare relative importance of idea diffusion mechanisms.
 	      \end{itemize}
 \end{itemize}
@@ -268,29 +271,40 @@ leaders of the same group disagree on basic points
 such as whether their platform can be considered racist \cite{muddeFarRightToday2019}.
 Academics agree that the movements we observe and discuss here falls under the a very broad umbrella of right-wing politics \cite{muddeFarRightToday2019}. However, they lack consensus on many other judgments, importantly how to distinguish different far-right groups from one another and what each group's core features or motivations are \cite{muddeFarRightToday2019}.
 
-In Table \ref{table:key-terms}, I provide my working definitions for key terms and labels related to far-right groups. In formulating these definitions, I strove to communicate the most commonly accepted understandings of the various groups at-hand.
+In Table \ref{table:key-terms}, I outline my concepts of the far-right groups mentioned in this proposal. My definitions weigh and reconcile competing frames to provide fair representation of the various groups.
 
 \begin{table*}
-\caption{Key Far-Right Groups and Terms}
+\caption{Key Far-Right Groups}
 \label{table:key-terms}
-\begin{tabular}{ p{2cm}  p{6cm}  p{4cm} }
+\begin{tabular}{ p{3cm}  p{7cm}  p{6cm} }
 
   \toprule
   Group & Key Features & Additional Notes \\
   \midrule
-  ``Alt-Right'' & The Internet-age reincarnation of white nationalism; notably departs from white nationalism in 'optics' savvy--has disavowed Nazi and KKK symbols.
+  "Alt-Right" & The Internet-age reincarnation or offshoot of white nationalism. Members enthusiastically endorse white identity politics, hyper-masculinity, and bio-essentialism.
+  
+  \medskip
+  
+  Their social media and optics savvy sets them apart from white nationalist predecessors; for example, more experienced members take care to advise new members to distance themselves from symbols or imagery tied to Nazism or the Ku Klux Klan.
 
-  Influenced by a number of Internet subcultures dominated by white males. Heavy endorsement of white identity politics, hyper-masculinity, and bio-essentialism.  & [need to add] \\
+   & Some experts are skeptical that the "alt-right" can or should be understood as a group or movement separate from white nationalism or supremacy \cite{hartzellAltWhiteConceptualizingAltRight, johndaniszewskiWritingAltright2016}. \\ 
   \hline
-  ``Alt-Lite''      & Differentiates themselves from the ``alt-right'' by outwardly rejecting racism. Consider themselves 'civic nationalists' as opposed to 'white nationalists'. & [need to add]    \\
+  "Alt-Lite" & Thought to be a "lite" version of the "alt-right". They bear strong demographic and ideological resemblance to the "alt-right" and are said to distinguish themselves from the more well-known group by expressly valuing civic nationalism over white nationalism. & It remains an open question whether it is possible to distinguish between "alt-right" and "alt-lite" beyond the civic vs white nationalism criterion. Given the "alt-right"'s mindfulness of standards of social acceptability, an "alt-right" member's publicly expressed points of view may be indistinguishable from an "alt-lite" member's. 
+  \\
   \hline
-  Civic Nationalist & A                                                                                                                                                            & [need to add]    \\
+  Far-Right & Encompasses both the \textit{extreme right} and the \textit{radical right}. 
+  
+  \medskip
+  
+  The extreme right opposes democracy; many members support fascism. 
+  
+  \medskip 
+  
+  The radical right accepts democracy (e.g. they support the idea of majority rule), but rejects key tenets of liberal democracy, such as multiculturalism, plurality, or minority rights. & Different factions of the "alt-right" fall into extreme vs radical right. However, "alt-right" ideology can squarely be understood as far-right.\\
   \hline
-  Far-Right         & [need to add]                                                                                                                                                & [need to add]    \\
+  White Supremacist & A white supremacist is "a person who believes that the white race is inherently superior to other races and that white people should have control over people of other races" \cite{merriam-websterDefinitionWHITESUPREMACIST}. & I took the liberty of quoting Merriam-Webster's definitions for "white supremacist" and "white nationalist" as these phrases, in contrast to the first three on this list, lend themselves to concise definition.\\
   \hline
-  White Supremacist & [need to add]                                                                                                                                                & [need to add]    \\
-  \hline
-  White Nationalist & [need to add]                                                                                                                                                & [need to add]    \\
+  White Nationalist & A white nationalist is "one of a group of militant whites who espouse white supremacy and advocate enforced racial segregation" \cite{merriam-websterDefinitionWHITENATIONALIST} & Note that the definition of white nationalist involves white supremacy. Scholarly work \cite{danielsAlgorithmicRiseAltRight2018,  hartzellAltWhiteConceptualizingAltRight} caution that self-labelling as a white nationalist (as opposed to a white supremacist) is a rhetorical move---self-styled white nationalists distance themselves from blatant hatred and racism by arguing their motivation is rooted in identity politics that "fellow" marginalized identity groups are able to enjoy without criticism. \\
   \bottomrule
 \end{tabular}
 \end{table*}
@@ -316,13 +330,9 @@ white supremacists) (Greenblatt, n.d.). \footnote{In 2016, 13\% of domestic extr
 } However, as this project is primarily concerned with
 measuring cultural change as captured by change in language, I describe
 the process of normalization I wish to study as “mainstreaming” rather
-than “radicalization”. \todo[inline, color=yellow]{Change the last sentence here to talk about how the existential threat from the alt-right is disinformation warfare -> collapse of democracy.}
+than “radicalization”. \todo[inline, color=orange!65]{Change the last sentence here to talk about how the existential threat from the alt-right is disinformation warfare -> collapse of democracy.}
 
 \section{Literature Review}
-
-
-\todo[inline]{make promised neighborhood friendly table of descriptors and descriptions for the far right + related + sub groups}
-
 
 \subsection{``Alt-Right''}
 
@@ -376,7 +386,7 @@ media outlets, and support white collective action (e.g. agree with
 statements such as ``More needs to be done so that people remember
 that ``White Lives'' also matter.'').
 
-The "alt-right" set themselves apart from other far-right movements with their emphasis on mainstreaming and their social media savvy. The latter trait enables the success of the first \cite{sternProudBoysWhite2019, nagleKillAllNormies2017, gallaherMainstreamingWhiteSupremacy2020}. \todo[inline, color=red]{Fix up this paragraph. Should read about mainstreaming -> political discourse focus warp}
+The "alt-right" set themselves apart from other far-right movements with their emphasis on mainstreaming and their social media savvy. The latter trait enables the success of the first \cite{sternProudBoysWhite2019, nagleKillAllNormies2017, gallaherMainstreamingWhiteSupremacy2020}. \todo[inline, color=red!70]{Fix up this paragraph. Should read about mainstreaming -> political discourse focus warp}
 \citet{sternProudBoysWhite2019} provides a vignette to demonstrate how "alt-right" ideas have warped mainstream political discourse: As an ``alt-right''-imagined conspiracy theory, "white genocide" had scant mention in public discourse. However, it later found itself the centerpiece issue of a Tucker Carlson news story about how white Southern African farmers were being massacred by their black, African-led government. Later, President Trump announced over Twitter that he had asked his Secretary of State to "closely study the South African land and farm seizures ... and the large scale killing of farmers" [CITATION]. This is all in spite of a lack of data to support that farmers were at heightened risk of being killed in comparison to the average South African [BBC citation]. In summary, as one ``alt-right'' member boasts, "What Tucker Carlson talks about, we talked about a year ago" \cite{janetreitmanLawEnforcementFailed2018}.
 
 Previous works studying mainstreaming relied on expert judgment to judge
@@ -453,8 +463,7 @@ would we expect from a Republican vs a Democrat?" or "How tied are stock prices
 to newspaper headlines?"  \cite{monroeFightinWordsLexical2008,
 gentzkowTextData2019}.
 
-Although my chosen methods may appear disjoint at cursory glance, they all work toward capturing and dissecting power/influence and language use in a networked setting.
-
+My applications of SNA and computational linguistics methodology will enable me to thoroughly capture and dissect power, influence and language use in a networked setting.
 
 \section{Data Procedures}
 
@@ -708,7 +717,7 @@ non-community-related factors that play into AR idea diffusion. \end{enumerate}
 
 \subsection{Detecting AR Ideas}
 
-\todo[inline, color=red]{maybe some clarification here about "idea" vs item of
+\todo[inline, color=yellow]{Clarify "idea" vs item of
 speech + that some other unit of speech might demonstrate itself more salient
 than n-grams or hashtags (e.g. framing)}
 
@@ -751,9 +760,11 @@ simultaneous multiple comparisons \cite{tanEffectWordingMessage2014}.
 % [\href{https://github.com/jacobeisenstein/language-change-tutorial/blob/master/ic2s2-notebooks/DontFeedTheTrolls.ipynb}{ipynb
 % potentially useful to look into if interested in exploring causality}]
 
-\subsection{Predicting Diffusion via a Logistic Regression}
+\subsection{Modelling Diffusion via a Logistic Regression}
 
-I fit a logistic regression model to predict whether an AR idea will eventually
+\todo[inline, color=yellow!90]{Change "Prediction" $\rightarrow$ Language about modelling}
+
+I fit a logistic regression to model whether an AR idea will eventually "diffuse" into the general public, which I 
 be used by a non-trivial number of general public users. More specifically, this
 logistic regression will attempt to predict whether, within the next week, a
 non-trivial number of general public users will use an AR idea.
