@@ -2606,68 +2606,68 @@
           \textcolor{white}{\LARGE\sffamily\bfseries\@acmArticle}}}}
   \end{picture}\fi}
 
-% \AtBeginDocument{%
-% \fancypagestyle{firstpagestyle}{%
-%   \fancyhf{}%
-%   \renewcommand{\headrulewidth}{\z@}%
-%   \renewcommand{\footrulewidth}{\z@}%
-%   \if@ACM@journal@bibstrip
-%     \ifcase\ACM@format@nr
-%     \relax % manuscript
-%       \fancyhead[L]{\ACM@linecountL}%
-%       \fancyfoot[RO,LE]{\if@ACM@printfolios\small\thepage\fi}%
-%       \if@ACM@nonacm\else%
-%         \fancyfoot[RE,LO]{\footnotesize Manuscript submitted to ACM}%
-%       \fi%
-%     \or % acmsmall
-%       \if@ACM@nonacm\else%
-%         \fancyfoot[RO,LE]{\footnotesize \@journalNameShort, Vol. \@acmVolume, No.
-%         \@acmNumber, Article \@acmArticle.  Publication date:
-%         \@acmPubDate.}%
-%       \fi%
-%       \fancyhead[LE]{\ACM@linecountL\@folioblob}%
-%       \fancyhead[LO]{\ACM@linecountL}%
-%       \fancyhead[RO]{\@folioblob}%
-%       \fancyheadoffset[RO,LE]{0.6\@folio@wd}%
-%     \or % acmlarge
-%     %   \if@ACM@nonacm\else%
-%     %     \fancyfoot[RO,LE]{\footnotesize \@journalNameShort, Vol. \@acmVolume, No.
-%     %     \@acmNumber, Article \@acmArticle.  Publication date:
-%     %     \@acmPubDate.}%
-%     %   \fi%
-%       \fancyhead[RO]{\@folioblob}%
-%       \fancyhead[LE]{\ACM@linecountL\@folioblob}%
-%       \fancyhead[LO]{\ACM@linecountL}%
-%       \fancyheadoffset[RO,LE]{1.4\@folio@wd}%
-%     \or % acmtog
-%       \if@ACM@nonacm\else%
-%         \fancyfoot[RO,LE]{\footnotesize \@journalNameShort, Vol. \@acmVolume, No.
-%         \@acmNumber, Article \@acmArticle.  Publication date:
-%         \@acmPubDate.}%
-%       \fi%
-%       \fancyhead[L]{\ACM@linecountL}%
-%       \fancyhead[R]{\ACM@linecountR}%
-%     \else % Conference proceedings
-%       \fancyhead[L]{\ACM@linecountL}%
-%       \fancyhead[R]{\ACM@linecountR}%
-%       \fancyfoot[C]{\if@ACM@printfolios\footnotesize\thepage\fi}%
-%     \fi
-%   \else
-%     \fancyhead[L]{\ACM@linecountL}%
-%     \fancyhead[R]{\ACM@linecountR}%
-%     \fancyfoot[C]{\if@ACM@printfolios\footnotesize\thepage\fi}%
-%   \fi
-%   \if@ACM@timestamp
-%     \ifnum\ACM@format@nr=0\relax % Manuscript
-%     \fancyfoot[LO,RE]{\ACM@timestamp\quad
-%       \if@ACM@nonacm\else
-%         \footnotesize Manuscript submitted to ACM
-%       \fi}
-%     \else
-%     \fancyfoot[LO,RE]{\ACM@timestamp}
-%     \fi
-%   \fi
-% }}
+\AtBeginDocument{%
+\fancypagestyle{firstpagestyle}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{\z@}%
+  \renewcommand{\footrulewidth}{\z@}%
+  \if@ACM@journal@bibstrip
+    \ifcase\ACM@format@nr
+    \relax % manuscript
+      \fancyhead[L]{\ACM@linecountL}%
+      \fancyfoot[RO,LE]{\if@ACM@printfolios\small\thepage\fi}%
+      \if@ACM@nonacm\else%
+        \fancyfoot[RE,LO]{\footnotesize Manuscript submitted to ACM}%
+      \fi%
+    \or % acmsmall
+      \if@ACM@nonacm\else%
+        \fancyfoot[RO,LE]{\footnotesize \@journalNameShort, Vol. \@acmVolume, No.
+        \@acmNumber, Article \@acmArticle.  Publication date:
+        \@acmPubDate.}%
+      \fi%
+      \fancyhead[LE]{\ACM@linecountL\@folioblob}%
+      \fancyhead[LO]{\ACM@linecountL}%
+      \fancyhead[RO]{\@folioblob}%
+      \fancyheadoffset[RO,LE]{0.6\@folio@wd}%
+    \or % acmlarge
+    %   \if@ACM@nonacm\else%
+    %     \fancyfoot[RO,LE]{\footnotesize \@journalNameShort, Vol. \@acmVolume, No.
+    %     \@acmNumber, Article \@acmArticle.  Publication date:
+    %     \@acmPubDate.}%
+    %   \fi%
+      \fancyhead[RO]{\@folioblob}%
+      \fancyhead[LE]{\ACM@linecountL\@folioblob}%
+      \fancyhead[LO]{\ACM@linecountL}%
+      \fancyheadoffset[RO,LE]{1.4\@folio@wd}%
+    \or % acmtog
+      \if@ACM@nonacm\else%
+        \fancyfoot[RO,LE]{\footnotesize \@journalNameShort, Vol. \@acmVolume, No.
+        \@acmNumber, Article \@acmArticle.  Publication date:
+        \@acmPubDate.}%
+      \fi%
+      \fancyhead[L]{\ACM@linecountL}%
+      \fancyhead[R]{\ACM@linecountR}%
+    \else % Conference proceedings
+      \fancyhead[L]{\ACM@linecountL}%
+      \fancyhead[R]{\ACM@linecountR}%
+      \fancyfoot[C]{\if@ACM@printfolios\footnotesize\thepage\fi}%
+    \fi
+  \else
+    \fancyhead[L]{\ACM@linecountL}%
+    \fancyhead[R]{\ACM@linecountR}%
+    \fancyfoot[C]{\if@ACM@printfolios\footnotesize\thepage\fi}%
+  \fi
+  \if@ACM@timestamp
+    \ifnum\ACM@format@nr=0\relax % Manuscript
+    \fancyfoot[LO,RE]{\ACM@timestamp\quad
+      \if@ACM@nonacm\else
+        \footnotesize Manuscript submitted to ACM
+      \fi}
+    \else
+    \fancyfoot[LO,RE]{\ACM@timestamp}
+    \fi
+  \fi
+}}
 \def\ACM@NRadjust#1{%
  \begingroup
   \expandafter\ifx\csname Sectionformat\endcsname\relax

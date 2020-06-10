@@ -5,17 +5,17 @@
 %% The original source files were:
 %%
 %% samples.dtx  (with options: `manuscript')
-%% 
+%%
 %% IMPORTANT NOTICE:
-%% 
+%%
 %% For the copyright see the source file.
-%% 
+%%
 %% Any modified versions of this file must be renamed
 %% with new filenames distinct from main.tex.
-%% 
+%%
 %% For distribution of the original source see the terms
 %% for copying and modification in the file samples.dtx.
-%% 
+%%
 %% This generated file may be distributed as long as the
 %% original source files, as listed above, are part of the
 %% same distribution. (The sources need not necessarily be
@@ -78,7 +78,7 @@
 
 %%
 %% end of the preamble, start of the body of the document source.
-\usepackage{enumitem} 
+\usepackage{enumitem}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage[colorinlistoftodos]{todonotes}
@@ -99,11 +99,11 @@
 \author{Hayden Le}
 % \authornote{Both authors contributed equally to this research.}
 \email{hayde@umich.edu}
- \affiliation{%
-  \institution{University of Michigan}
-  \city{Ann Arbor}
-  \state{Michigan}
-} 
+\affiliation{%
+	\institution{University of Michigan}
+	\city{Ann Arbor}
+	\state{Michigan}
+}
 \maketitle
 
 \todototoc{}
@@ -111,7 +111,7 @@
 
 \section{Introduction}
 
-The “alt-right” has an inordinate influence on
+The "alt-right"\footnote{§2.1 discusses the stylistic choice of quotation marks here.} has an inordinate influence on
 American political discourse \cite{, brydenUnderlyingSociopoliticalProcesses2019, schreckingerAltRightComesWashington}. This calls for concern, not only because the movement has motivated a number of terrorist acts \cite{laqueurFutureTerrorismISIS2018, bjorgoExtremeRightViolenceTerrorism, castleWhiteRacialActivism2020}, but also as their
 rhetoric poses a existential threat to democratic social and cultural values \cite{danielsCyberRacismWhite2009}.
 
@@ -127,46 +127,63 @@ not only friendly to but also a superspreader of their previously-considered fri
 
 Continued growth in the "alt-right"'s political influence is far from a distant possibility---they enjoy a sizeable sympathetic audience in the current American political climate. \citet{hawleyDemographyAltRight2018} estimates that roughly 6\% of non-Hispanic whites have beliefs in line with white nationalism. He arrived at 6\% by filtering for non-Hispanic white responses to the 2016 American National Election Survey (ANES) then determining the ratio of responses where “a strong sense of white identity”, “a belief in the importance of white solidarity”, and “a sense of white victimization” were all rated as “very” or “extremely” important. In addition to the 6\% who gave those items a high importance rating, many respondents agreed with at least one of the three statements: 28\% held a strong sense of white identity, 38\% believed in the importance of white solidarity, and 27\% held a sense of white victimization. A 2017 Reuters/Ipsos poll found similar patterns: 39\% \footnote{Unlike \citet{hawleyDemographyAltRight2018}, these percentages are not after filtering for non-Hispanic whites.} of respondents strongly or somewhat agreed with the statement, “White people are currently under attack in this country”; 31\% strongly or somewhat agreed with the statement, “American must protect and preserve its White European heritage”; 6\% explicitly strongly or somewhat support the “alt-right”; 8\% strongly or somewhat support white nationalism; and 4\% strongly or somewhat support neo-Nazism \cite{politicsNewPollAmericans}.
 
-The major blocker between the "alt-right" and more widespread conservative acceptance is resistance to alignment with fragrant racism. Despite their formidable strides in political influence and the conditions of possibility described, the "alt-right" remains, at best, considered a "fringe" movement as sympathizers (and potential converts) adamantly assert their statuses as non-racists and defend the idea that "[a]ll men are equal" \cite{mainRiseAltRight2018, hawleyAltRightWhatEveryone2018}. These sympathizers, similar in many ideological and demographic dimensions to to "alt-right" members but disapproving of white-identity politics, have been dubbed as \textit{"alt-lite"} \cite{mainRiseAltRight2018, hawleyAltRightWhatEveryone2018}. Both ``alt-right'' leaders and scholars speculate that that the ``alt-lite''
-are a potential conduit through which the “alt-right” can reach a wider
-audience and, consequently, grow their cultural influence. Though several scholarly works consider the "alt-right" \cite{mainRiseAltRight2018, hawleyMakingSenseAltright2017, nagleKillAllNormies2017} and related matters such as their mainstreaming
-efforts \cite{gallaherMainstreamingWhiteSupremacy2020} and its effect on public discourse \cite{sternProudBoysWhite2019, cammaertsMainstreamingExtremeRightWing2018}, details about how the "alt-lite" distinguishes itself from the "alt-right" and contributes to the latter's mainstreaming persist as open questions. To address this research gap, I will analyze "alt-right" and "alt-lite" discussions and networks on Twitter, focusing on the following research questions:
+The major blocker between the "alt-right" and more widespread conservative acceptance is shared
+rejection of fragrant racism. Despite their formidable strides in political influence and the
+conditions of possibility described, the "alt-right" remains, at best, considered a fringe movement
+as sympathizers (and potential converts) adamantly assert their statuses as non-racists and defend
+the idea that "[a]ll men are equal" \cite{mainRiseAltRight2018, hawleyAltRightWhatEveryone2018}.
+These sympathizers, similar in many ideological and demographic dimensions to to "alt-right" members
+but disapproving of white-identity politics, have been dubbed as \textit{"alt-lite"}
+\cite{mainRiseAltRight2018, hawleyAltRightWhatEveryone2018}. Both ``alt-right'' leaders and scholars
+speculate that that the ``alt-lite'' are a potential conduit through which the “alt-right” can reach a wider audience and, consequently, grow their cultural influence. Though several scholarly works
+consider the "alt-right" \cite{mainRiseAltRight2018, hawleyMakingSenseAltright2017, nagleKillAllNormies2017}
+and related matters such as their mainstreaming
+efforts \cite{gallaherMainstreamingWhiteSupremacy2020} and its effect on public discourse
+\cite{sternProudBoysWhite2019, cammaertsMainstreamingExtremeRightWing2018}, details about how the
+"alt-lite" distinguishes itself from the "alt-right" and contributes to the latter's mainstreaming
+persist as open questions. To address this research gap, I will analyze "alt-right" and "alt-lite"
+discussions and networks on Twitter, focusing on the following research questions:
 
 \begin{enumerate}[font={\bfseries},label={{RQ}\arabic*.}]
-    \item What are the distinctive characteristics of "alt-right" or "alt-lite" Twitter? How do they contrast with general Twitter?
-    
-    \item How are "alt-right", "alt-lite", and general Twitter's networks connected?
-    
-    \item Does the "alt-lite" mediate diffusion of "alt-right" ideas? If so, how?
+	\item What are the distinctive characteristics of "alt-right" or "alt-lite" Twitter? How do they contrast with general Twitter?
+
+	\item How are "alt-right", "alt-lite", and general Twitter's networks connected?
+
+	\item Does the "alt-lite" mediate diffusion of "alt-right" ideas? If so, how?
 \end{enumerate}
 
 I will address:
 \begin{itemize}
-    \item RQ1 by examining the communities’ network structures and language use
-    \item RQ2 by analyzing
-    \begin{itemize}
-        \item communities’ networks’ (represented as graphs) exterior pointing edges
-(i.e. edges that connect community users to non-community users) and
-overlapping users (individuals who are members of multiple communities)
-        \item a Hawkes process capturing Twitter as a multi-speaker
-conversation
-    \end{itemize}
-\item RQ3 by hypothesis testing the parameters of
-\begin{itemize}
-    \item the Hawkes
-process to determine which communities hold influence in another
-communities’ discourse
-\item a logistic regression predicting diffusion of an idea from
-``alt-right” discourse to general public discourse to pinpoint and compare relative importance of idea diffusion mechanisms.
-\end{itemize}
+	\item RQ1 by examining the communities’ network structures and language use
+	\item RQ2 by analyzing
+	      \begin{itemize}
+	      	\item communities’ networks’ (represented as graphs) exterior pointing edges
+	      	      (i.e. edges that connect community users to non-community users) and
+	      	      overlapping users (individuals who are members of multiple communities)
+	      	\item a Hawkes process capturing Twitter as a multi-speaker
+	      	      conversation
+	      \end{itemize}
+	\item RQ3 by hypothesis testing the parameters of
+	      \begin{itemize}
+	      	\item the Hawkes
+	      	      process to determine which communities hold influence in another
+	      	      communities’ discourse
+	      	\item a logistic regression predicting diffusion of an idea from
+	      	      ``alt-right” discourse to general public discourse to pinpoint and compare relative importance of idea diffusion mechanisms.
+	      \end{itemize}
 \end{itemize}
 
-At the conclusion of this project, I will contribute to scholarly understanding of ``alt-right'' mainstreaming efforts by providing language markers with which to differentiate between ``alt-right'' and ``alt-lite'' rhetoric, defining the two groups' relationship to one another and mainstream discourse through a social network analysis lens, and pinpointing social media mechanisms that expediate ``alt-right'' idea diffusion.
- 
- \medskip
+At the conclusion of this project, I will contribute to scholarly understanding of ``alt-right''
+mainstreaming efforts by providing language markers with which to differentiate between
+``alt-right'' and ``alt-lite'' rhetoric, defining the two groups' relationship to one another and
+mainstream discourse through a social network analysis lens, and pinpointing social media mechanisms
+that expediate ``alt-right'' idea diffusion.
 
-The remainder of this proposal is organized as follows: I explain deliberate style and language choices. Then, I review previous work, detailing current scholarly understanding of the “alt-right” and
-“alt-lite”. Closing my proposal, I outline my intended methodology and timeline.
+\medskip
+
+The remainder of this proposal is organized as follows: I explain deliberate style and language
+choices. Then, I review previous work, detailing current scholarly understanding of the “alt-right”
+and “alt-lite”. Closing my proposal, I outline my intended methodology and timeline.
 
 \section{Style and Language}
 
@@ -178,25 +195,29 @@ Both academic and journalist experts caution that using the
 phrase “alt-right” lends undue political legitimacy to a group predominantly
 composed of white nationalists and supremacists by obscuring that
 connection. As such, many opt to highlight their unenthusiastic use of
-“alt-right” with “quotation marks, hyphen and lower case” 
+“alt-right” with “quotation marks, hyphen and lower case”
 \cite{johndaniszewskiWritingAltright2016} to remind readers of the complexity belying the
 descriptor. I style “alt-lite” in a similar manner.
 
-\subsubsection{Far-Right Descriptors}
+\subsubsection{Describing Far-Right Groups}
 
-\todo[inline]{add words here about how no one agrees on terminology for the far right, but that there is a neighborhood friendly table with this project's working understanding}
+Experts disagree on the nonmenclature and description of far-right movements and
+subgroups. This is partially the result of earlier academic and journalist work
+that interchanged labels without greater deilberation [CITATION]. However,
+far-right individuals themselves also share responsibility: members of the same
+far-right party disagree on basic points like whether their party is racist
+[cite ]. Consequently, while cademics agree that the movements are right-wing,
+but disagree on what constitutes 'right-wing'.
 
 \subsection{Mainstreaming or Radicalizing?}
 
-
-\todo[inline, color=yellow]{maybe add a multi-step shift of overton window visualization to make this section more clear}
-\todo[inline, color=red]{fill in [CITATION]}
-
-
-Mainstreaming has many
-conceptual overlaps with \textit{radicalization}, a more well-known and researched idea, particularly in criminal justice and computer science literature [CITATIONS]. The
+Mainstreaming has many conceptual overlaps with \textit{radicalization}, a more well-known and researched idea,
+particularly in criminal justice and computer science literature [CITATIONS]. The
 difference between mainstreaming and radicalization lies in what scale on
-perception distortion takes place. Mainstreaming refers to efforts to move an idea from the edges (or “fringe”) of \textit{general} social acceptability to the center; to mainstream an idea is to normalize it. Meanwhile, radicalizing refers to warping an \textit{individual's} sense of acceptable ideas; to radicalize a person involves changing what they perceive as normal.
+perception distortion takes place. Mainstreaming refers to efforts to move an idea from the edges
+(or “fringe”) of \textit{general} social acceptability to the center; to mainstream an idea is to
+normalize it. Meanwhile, radicalizing refers to warping an \textit{individual's} sense of acceptable
+ideas; to radicalize a person involves changing what they perceive as normal.
 
 Also, use of “radicalization” suggests terrorism as the larger
 concern at-hand [CITATION]. When speaking about the “alt-right”, acts of
@@ -204,8 +225,8 @@ terror are well within the scope of concern, especially as, since Donald
 Trump’s election in 2016, a rising number of these extremist-related
 killings have been attributed to right-wing extremists (in particular,
 white supremacists) (Greenblatt, n.d.). \footnote{In 2016, 13\% of domestic extremist-related
-killings were committed by right-wing extremists. Compare this to 56\%,
-78\%, and 86\% in 2017, 2018, and 2019, respectively \cite{greenblattRightWingExtremistViolence}.
+	killings were committed by right-wing extremists. Compare this to 56\%,
+	78\%, and 86\% in 2017, 2018, and 2019, respectively \cite{greenblattRightWingExtremistViolence}.
 } However, as this project is primarily concerned with
 measuring cultural change as captured by change in language, I describe
 the process of normalization I wish to study as “mainstreaming” rather
@@ -214,38 +235,38 @@ than “radicalization”. \todo[inline, color=yellow]{Change the last sentence 
 \section{Literature Review}
 
 
-\todo[inline]{table of descriptors and descriptions for the far right sub groups }
+\todo[inline]{make promised neighborhood friendly table of descriptors and descriptions for the far right + related + sub groups}
 \begin{table*}
 
-  \caption{Key Terms}
-  \label{table:key-terms}
-  
-  \begin{tabular}{ p{2cm}  p{6cm}  p{4cm} }
-  
-    \toprule
-     Group & Key Features &  Additional Notes\\ 
-    \midrule
- ``Alt-Right'' & The Internet-age reincarnation of white nationalism; notably departs from white nationalism in 'optics' savvy--has disavowed Nazi and KKK symbols. 
- 
- Influenced by a number of Internet subcultures dominated by white males. Heavy endorsement of white identity politics, hyper-masculinity, and bio-essentialism.  & [need to add] \\ 
- \hline
- ``Alt-Lite'' & Differentiates themselves from the ``alt-right'' by outwardly rejecting racism. Consider themselves 'civic nationalists' as opposed to 'white nationalists'. & [need to add]\\
-  \hline
-  Civic Nationalist & A & [need to add]\\
-  \hline
- Far-Right & [need to add] & [need to add]\\
- \hline
- White Supremacist & [need to add] & [need to add]\\
-  \hline
- White Nationalist & [need to add] & [need to add]\\
-   \bottomrule
-\end{tabular}
+	\caption{Key Terms}
+	\label{table:key-terms}
+
+	\begin{tabular}{ p{2cm}  p{6cm}  p{4cm} }
+
+		\toprule
+		Group             & Key Features                                                                                                                                                 & Additional Notes \\
+		\midrule
+		``Alt-Right'' & The Internet-age reincarnation of white nationalism; notably departs from white nationalism in 'optics' savvy--has disavowed Nazi and KKK symbols.
+
+		Influenced by a number of Internet subcultures dominated by white males. Heavy endorsement of white identity politics, hyper-masculinity, and bio-essentialism.  & [need to add] \\
+		\hline
+		``Alt-Lite''      & Differentiates themselves from the ``alt-right'' by outwardly rejecting racism. Consider themselves 'civic nationalists' as opposed to 'white nationalists'. & [need to add]    \\
+		\hline
+		Civic Nationalist & A                                                                                                                                                            & [need to add]    \\
+		\hline
+		Far-Right         & [need to add]                                                                                                                                                & [need to add]    \\
+		\hline
+		White Supremacist & [need to add]                                                                                                                                                & [need to add]    \\
+		\hline
+		White Nationalist & [need to add]                                                                                                                                                & [need to add]    \\
+		\bottomrule
+	\end{tabular}
 \end{table*}
 
 \subsection{``Alt-Right''}
 
 The ``alt-right” are a loosely connected group of individuals who predominantly support white supremacy and hyper-masculinity, reject multiculturalism and feminism, and interface with one another primarily through the internet
-\cite{sternProudBoysWhite2019, mainRiseAltRight2018, nagleKillAllNormies2017, hawleyMakingSenseAltright2017}. 
+\cite{sternProudBoysWhite2019, mainRiseAltRight2018, nagleKillAllNormies2017, hawleyMakingSenseAltright2017}.
 This description is incomplete and a simplification for
 many reasons, including that ``alt-right'' is applied as a label inconsistently by supporters and observers alike \cite{hawleyMakingSenseAltright2017} and ``the "alt-right"`, as a phrase, suggests a monolithic collective \cite{massanariRethinkingResearchEthics2018}, which fails to capture the dispersed and disorganized \cite{martinDissectingTrumpMost2017} nature of the ``alt-right'', a 'movement' with no formal membership nor accepted leaders \cite{hawleyMakingSenseAltright2017}. On top of these issues, experts are skeptical that those who label themselves "alt-right" have discernible shared traits aside from those attributed to white supremacists
 \cite{gallaherMainstreamingWhiteSupremacy2020, johndaniszewskiWritingAltright2016}.  With these caveats in mind, literature surrounding the ``alt-right” can be divided into two categories. One strand describes the ``alt-right'' as part
@@ -262,8 +283,8 @@ white nationalist movements \cite{andrewanglinNormieGuideAltRight}. For the most
 However, experts clash in their portrayals of the \textit{essence} of the ``alt-right''\cite{forscherPsychologicalProfileAltRight2020}. Some assert that the “alt-right” “is fundamentally concerned
 with race” \cite{hawleyMakingSenseAltright2017}. Others emphasize that the ``alt-right” is a white
 \textit{male} \footnote{Important to note that despite the misogyny present in
-“alt-right” rhetoric and talking points, the movement is not without its
-women. \citet{forscherPsychologicalProfileAltRight2020} estimate about 44\% of “alt-right”
+	“alt-right” rhetoric and talking points, the movement is not without its
+	women. \citet{forscherPsychologicalProfileAltRight2020} estimate about 44\% of “alt-right”
 supporters are women.}
 movement, and so gender, as well as race, is a dominant underlying
 factor in explaining beliefs and motivation \cite{kuszWinningBiglySporting2019}. \citet{gallaherMainstreamingWhiteSupremacy2020}
@@ -275,16 +296,16 @@ Americans and considering several accounts of the “alt-right”,
 the “alt-right” profile as one of acceptance of and eagerness to advance
 white supremacy, especially at the expense of non-whites. Additionally,
 they saw that self-identified “alt-right” members were “more similar
-than different” to those who voted for Trump in 2016. Between the two, ``alt-right” members were likely to
-report even greater enthusiasm for Trump, be suspicious of mainstream
+than different” to those who voted for Trump in 2016. Between the two, "alt-right” members were likely to
+report greater enthusiasm for Trump, be suspicious of mainstream
 media outlets, and support white collective action (e.g. agree with
 statements such as ``More needs to be done so that people remember
 that ``White Lives'' also matter.'').
 
 The "alt-right" set themselves apart from other far-right movements with their emphasis on mainstreaming and their social media savvy. The latter trait enables the success of the first \cite{sternProudBoysWhite2019, nagleKillAllNormies2017, gallaherMainstreamingWhiteSupremacy2020}. \todo[inline, color=red]{Fix up this paragraph. Should read about mainstreaming -> political discourse focus warp}
- \citet{sternProudBoysWhite2019} provides a vignette to demonstrate how ``alt-right'' ideas have warped mainstream political discourse: As an ``alt-right''-imagined conspiracy theory, "white genocide" had scant mention in public discourse. However, it later found itself the centerpiece issue of a Tucker Carlson news story about how white Southern African farmers were being massacred by their black, African-led government. Later, President Trump announced over Twitter that he had asked his Secretary of State to "closely study the South African land and farm seizures ... and the large scale killing of farmers" [CITATION]. This is all in spite of a lack of data to support that farmers were at heightened risk of being killed in comparison to the average South African [BBC citation]. In summary, as one ``alt-right'' member boasts, "What Tucker Carlson talks about, we talked about a year ago" \cite{janetreitmanLawEnforcementFailed2018}. \todo[inline, color=yellow]{Do I need to citations for each sentence in the Stern vignette?}
- 
- Previous works studying mainstreaming relied on expert judgment to judge whether `new' ideas, frames or concerns in media are actually repackaged versions of ``alt-right'' ideas. I will computational methods to identify vignettes of ``alt-right'' influence similar to that provided by \citet{sternProudBoysWhite2019}. I seek not only to provide more examples of how the ``alt-right'' have influenced political discourse, but also to clarify the process ``alt-right'' ideas take to get from point A (``alt-right'' circles) to point B (general conversation). 
+\citet{sternProudBoysWhite2019} provides a vignette to demonstrate how "alt-right" ideas have warped mainstream political discourse: As an ``alt-right''-imagined conspiracy theory, "white genocide" had scant mention in public discourse. However, it later found itself the centerpiece issue of a Tucker Carlson news story about how white Southern African farmers were being massacred by their black, African-led government. Later, President Trump announced over Twitter that he had asked his Secretary of State to "closely study the South African land and farm seizures ... and the large scale killing of farmers" [CITATION]. This is all in spite of a lack of data to support that farmers were at heightened risk of being killed in comparison to the average South African [BBC citation]. In summary, as one ``alt-right'' member boasts, "What Tucker Carlson talks about, we talked about a year ago" \cite{janetreitmanLawEnforcementFailed2018}.
+
+Previous works studying mainstreaming relied on expert judgment to judge whether `new' ideas, frames or concerns in media are actually repackaged versions of ``alt-right'' ideas. I will computational methods to identify vignettes of ``alt-right'' influence similar to that provided by \citet{sternProudBoysWhite2019}. I seek not only to provide more examples of how the ``alt-right'' have influenced political discourse, but also to clarify the process ``alt-right'' ideas take to get from point A (``alt-right'' circles) to point B (general conversation).
 
 \subsection{“Alt-Lite”}
 
@@ -328,78 +349,78 @@ examination of network structures and fitted model coefficients.
 
 \subsection{Measuring Influence via Social Networks and Language Use}
 
-I curated this project's chosen methods from established social network analysis (SNA) and computational linguistics techniques with previous successful applications in social science research. 
+I curated this project's chosen methods from established social network analysis (SNA) and computational linguistics techniques with previous successful applications in social science research.
 
 Researchers employ SNA to investigate groups and their intra- and inter-group relationships and interactions \cite{carringtonModelsMethodsSocial2005}. Closely related to our work, \citet{morstatterAltRightAltRechtsTwitter2018} employed SNA methods to distinguish German ``alt-right'' sub-communities from one another and discern the sub-communities' different themes in conversation, along with the flow of information between the sub-communities.
 
-Contemporary computational linguistics is closely aligned with social science research interests. Computational linguists steadfastly demonstrate interest in social science applications: \citep{lauOnlineTrendAnalysis} outline how to use topic models to track emerging trends or interests; \cite{bammanGenderIdentityLexical2014} cluster and train statistical classifiers on a Twitter corpus to study the relationship between gender, language use, and social networks. Similarly, social scientists have advanced computational linguistics methods by adjusting them to examine questions like "What language would we expect from a Republican vs a Democrat?" or "How tied are stock prices to newspaper headlines?"  \cite{monroeFightinWordsLexical2008, gentzkowTextData2019}. 
+Contemporary computational linguistics is closely aligned with social science research interests. Computational linguists steadfastly demonstrate interest in social science applications: \citep{lauOnlineTrendAnalysis} outline how to use topic models to track emerging trends or interests; \cite{bammanGenderIdentityLexical2014} cluster and train statistical classifiers on a Twitter corpus to study the relationship between gender, language use, and social networks. Similarly, social scientists have advanced computational linguistics methods by adjusting them to examine questions like "What language would we expect from a Republican vs a Democrat?" or "How tied are stock prices to newspaper headlines?"  \cite{monroeFightinWordsLexical2008, gentzkowTextData2019}.
 
-Although my chosen methods may appear disjoint at cursory glance, they all work toward capturing and dissecting power/influence and language use in a networked setting.  
+Although my chosen methods may appear disjoint at cursory glance, they all work toward capturing and dissecting power/influence and language use in a networked setting.
 
 
 \section{Data Procedures}
 
-    \subsection{Source of Data}
-    
-    I create my dataset by filtering from a Twitter Decahose\footnote{“Twitter decahose is made available through a Master License Agreement between Twitter, Inc. and the University of Michigan, and its research use is supported by the Michigan Institute for Data Science, Advanced Research Computing - Technology Services, and Consulting for Statistics, Computing \& Analytics Research.”} (a 10\% random sample of Twitter Firehose) collection that began late February 2018 and has yet to cease. This strategy (in contrast to starting from scratch and collecting my own using Twitter API) is the most cost-effective route, both monetarily and with regards to time.
+\subsection{Source of Data}
 
-    Previous quantitative investigations into the AR on Twitter (\cite{bergerAltrightTwitterCensus2018}, \cite{alizadehPsychologyMoralityPolitical2019}) created their datasets by, over time, crawling identified AR users and collecting relevant data via Twitter API. The comparative advantage of this approach is that one would have access to users' follows and followers over time. (The Twitter Decahose tweets do not include user friendship information at time of posting and historical friendship data is not accessible.) However, previous work \cite{chaMeasuringUserInfluence2010, versteegInformationtheoreticMeasuresInfluence2013} suggests that user-follower data is an unhelpful signal at best, noisy one at worst in Twitter information diffusion inquiries. Additionally, as the main goal of this project is to investigate a time-series process (how the AL assists in mainstreaming AR ideas) observing a longer period of time is preferable. 
+I create my dataset by filtering from a Twitter Decahose\footnote{“Twitter decahose is made available through a Master License Agreement between Twitter, Inc. and the University of Michigan, and its research use is supported by the Michigan Institute for Data Science, Advanced Research Computing - Technology Services, and Consulting for Statistics, Computing \& Analytics Research.”} (a 10\% random sample of Twitter Firehose) collection that began late February 2018 and has yet to cease. This strategy (in contrast to starting from scratch and collecting my own using Twitter API) is the most cost-effective route, both monetarily and with regards to time.
+
+Previous quantitative investigations into the AR on Twitter (\cite{bergerAltrightTwitterCensus2018}, \cite{alizadehPsychologyMoralityPolitical2019}) created their datasets by, over time, crawling identified AR users and collecting relevant data via Twitter API. The comparative advantage of this approach is that one would have access to users' follows and followers over time. (The Twitter Decahose tweets do not include user friendship information at time of posting and historical friendship data is not accessible.) However, previous work \cite{chaMeasuringUserInfluence2010, versteegInformationtheoreticMeasuresInfluence2013} suggests that user-follower data is an unhelpful signal at best, noisy one at worst in Twitter information diffusion inquiries. Additionally, as the main goal of this project is to investigate a time-series process (how the AL assists in mainstreaming AR ideas) observing a longer period of time is preferable.
 
 \subsection{Data Collection}
 
 My research questions call for samples of three Twitter communities: "alt-right" (AR), "alt-lite" (AL), and "general". I filter from historical Twitter Decahose tweets to assemble my dataset.
 
-    \subsubsection{"Alt-Right" and "Alt-Lite"}
-    
-    I begin collecting accounts contributing to AR discourse\footnote{I expressly avoid labelling non-public figure users as AR, AL, or otherwise. In other words, when I include a user as part of a community sample, I am not labelling them as a community member. Rather, I label them and their tweets as contributing to a community's discourse\footnote{In some ways, I follow \citet{salazarAltRightCommunityDiscourse2018}'s suggestion to examine the "alt-right" as a \textit{community of discourse}}.
-} by referring to the Anti-Defamation League's \cite{anti-defamationleagueAltRightAlt} and Southern Poverty Law Center's \cite{southernpovertylawcenterAltRight} publicly available determinations of AR groups and leading figures for "seed" AR members. I collect "seed" tweets from these users and extract retweeted or mentioned Twitter usernames to complete this community sample.
-    
-    To collect accounts contributing to AL discourse, I modify the above approach accordingly.
-    
-    \subsubsection{General}
-    
-    I collect a random sample of users to serve as a control group. This sample's size will be comparable to the other community samples'.
-    
-    % \subsubsection{Media}
-    
-    % [Potentially: Include top 36 media outlets (as identified by Pew Research Center) accounts/users to control for media effects \cite{barberaWhoLeadsWho2019}.]
-    
+\subsubsection{"Alt-Right" and "Alt-Lite"}
 
-    \subsubsection{Additional Features}
-    
-    Previous works' \cite{bergerAltrightTwitterCensus2018, alizadehPsychologyMoralityPolitical2019} data pre-processing and/or descriptive statistics of AR Twitter suggest features with which to flag users.
-    
-    \begin{itemize}
-        \item Bots
-        
-            A non-trivial segment of the AR Twitter is bot-run \cite{bergerAltrightTwitterCensus2018}. I will use \citet{davisBotOrNotSystemEvaluate2016}'s BotOrNot to determine whether users in my dataset are bots and flag them accordingly.
-            
-        \item Reside in the United States
-        
-            I will flag out users whose time zones or locations suggest that they are not residing in the United States to leave the potential open of later capturing non-US influence on US public discourse.
-        
-        \item Verified status and/or a large number of followers
-            
-            Both \citet{bergerAltrightTwitterCensus2018} and \citet{alizadehPsychologyMoralityPolitical2019} remove atypically popular users from their datasets. Having a verified status on Twitter and/or a "large" (relatively defined) following suggests that one is a public or known figure, so these metrics are good heuristics with which to approximate celebrity. As individual users' level of celebrity is predictive of network influence [CITATION], I will flag "celebrity".
-        
-    \end{itemize}
-    
+I begin collecting accounts contributing to AR discourse\footnote{I expressly avoid labelling non-public figure users as AR, AL, or otherwise. In other words, when I include a user as part of a community sample, I am not labelling them as a community member. Rather, I label them and their tweets as contributing to a community's discourse\footnote{In some ways, I follow \citet{salazarAltRightCommunityDiscourse2018}'s suggestion to examine the "alt-right" as a \textit{community of discourse}}.
+	} by referring to the Anti-Defamation League's \cite{anti-defamationleagueAltRightAlt} and Southern Poverty Law Center's \cite{southernpovertylawcenterAltRight} publicly available determinations of AR groups and leading figures for "seed" AR members. I collect "seed" tweets from these users and extract retweeted or mentioned Twitter usernames to complete this community sample.
+
+To collect accounts contributing to AL discourse, I modify the above approach accordingly.
+
+\subsubsection{General}
+
+I collect a random sample of users to serve as a control group. This sample's size will be comparable to the other community samples'.
+
+% \subsubsection{Media}
+
+% [Potentially: Include top 36 media outlets (as identified by Pew Research Center) accounts/users to control for media effects \cite{barberaWhoLeadsWho2019}.]
+
+
+\subsubsection{Additional Features}
+
+Previous works' \cite{bergerAltrightTwitterCensus2018, alizadehPsychologyMoralityPolitical2019} data pre-processing and/or descriptive statistics of AR Twitter suggest features with which to flag users.
+
+\begin{itemize}
+	\item Bots
+
+	      A non-trivial segment of the AR Twitter is bot-run \cite{bergerAltrightTwitterCensus2018}. I will use \citet{davisBotOrNotSystemEvaluate2016}'s BotOrNot to determine whether users in my dataset are bots and flag them accordingly.
+
+	\item Reside in the United States
+
+	      I will flag out users whose time zones or locations suggest that they are not residing in the United States to leave the potential open of later capturing non-US influence on US public discourse.
+
+	\item Verified status and/or a large number of followers
+
+	      Both \citet{bergerAltrightTwitterCensus2018} and \citet{alizadehPsychologyMoralityPolitical2019} remove atypically popular users from their datasets. Having a verified status on Twitter and/or a "large" (relatively defined) following suggests that one is a public or known figure, so these metrics are good heuristics with which to approximate celebrity. As individual users' level of celebrity likely predictive of network influence [CITATION], I will flag "celebrity".
+
+\end{itemize}
+
 \subsection{Tweets}
 
-    All collected Twitter users' tweets are extracted from the Decahose data. I preprocess tweets' text by lowercasing all characters and removing URLs. 
-    
+All collected Twitter users' tweets are extracted from the Decahose data. I preprocess tweets' text by lowercasing all characters and removing URLs.
+
 \subsection{Community Networks}
 
-I construct three distinct undirected graphs that will represent my data as a social network. Users are represented as nodes; if they are `linked' to one another, they will have an edge connecting them. One graph will be constructed using \textit{mentions} and \textit{replies} as links (i.e. if a user mentions another, their representative nodes will have an edge connecting them). The second graph is based off of \textit{retweets}. The third graph is potentially many graphs and connects two users if they share usage of a specialized term\footnote{Or have term-vectors with a high Jaccard similarity \cite{niwattanakulUsingJaccardCoefficient2013}.} . I construct these three graphs as they hold potentially different insight for my research questions. 
+I construct three distinct undirected graphs that will represent my data as a social network. Users are represented as nodes; if they are `linked' to one another, they will have an edge connecting them. One graph will be constructed using \textit{mentions} and \textit{replies} as links (i.e. if a user mentions another, their representative nodes will have an edge connecting them). The second graph is based off of \textit{retweets}. The third graph is potentially many graphs and connects two users if they share usage of a specialized term\footnote{Or have term-vectors with a high Jaccard similarity \cite{niwattanakulUsingJaccardCoefficient2013}.} . I construct these three graphs as they hold potentially different insight for my research questions.
 
 % However, if the two graphs end up being highly similar, then I will keep one and discard the other\footnote{I would favor the graph with variance in subsamples.}.
 
-    
-    \subsubsection{Community Detection}
-    
-   This project's overarching goal is to better understand the extent to which one Twitter community influences the rest of the social media platforms' discourse and what mechanisms support that influence. Consequently, discerning significant sub-graphs within is useful to discern significantly dense sub-graphs in our earlier generated graph. These dense sub-graphs are reflective of communities and identifying them has been shown to be helpful in predicting message diffusion from one community to another [ADD CITATION]. This community detection is done despite users already having been sorted into communities (by way of my data collecting process) because contrasting those labels and communities with those mined using graph features will highlight relevant particulars (e.g. Is there a set of users that act as "in-between" for the "alt-right" and the "alt-lite" communities?).
-   
-   To distinguish communities as present in the user network graphs' structures, I need a community detection framework that performs well on social media community detection benchmarks, can handle nodes potentially being members of multiple communities, and is scalable. \citet{epastoEgoSplittingFrameworkNonOverlapping2017}'s \textit{Ego-Splitting} framework meets these criteria and is implemented by \citet{rozemberczkiAPIOrientedOpensource2020}'s \href{https://github.com/benedekrozemberczki/karateclub}{Karate Club}, an open-source unsupervised machine learning library extension to \href{https://networkx.github.io/}{NetworkX}. I plan to use it to organize the user network graphs into communities; this organization will be visualized using NetworkX.
+
+\subsubsection{Community Detection}
+
+This project's overarching goal is to better understand the extent to which one Twitter community influences the rest of the social media platforms' discourse and what mechanisms support that influence. Consequently, discerning significant sub-graphs within is useful to discern significantly dense sub-graphs in our earlier generated graph. These dense sub-graphs are reflective of communities and identifying them has been shown to be helpful in predicting message diffusion from one community to another [ADD CITATION]. This community detection is done despite users already having been sorted into communities (by way of my data collecting process) because contrasting those labels and communities with those mined using graph features will highlight relevant particulars (e.g. Is there a set of users that act as "in-between" for the "alt-right" and the "alt-lite" communities?).
+
+To distinguish communities as present in the user network graphs' structures, I need a community detection framework that performs well on social media community detection benchmarks, can handle nodes potentially being members of multiple communities, and is scalable. \citet{epastoEgoSplittingFrameworkNonOverlapping2017}'s \textit{Ego-Splitting} framework meets these criteria and is implemented by \citet{rozemberczkiAPIOrientedOpensource2020}'s \href{https://github.com/benedekrozemberczki/karateclub}{Karate Club}, an open-source unsupervised machine learning library extension to \href{https://networkx.github.io/}{NetworkX}. I plan to use it to organize the user network graphs into communities; this organization will be visualized using NetworkX.
 
 \section{Community Snapshots}
 
@@ -412,51 +433,51 @@ For all analysis, I utilize parametric bootstrap sampling \cite{gentzkowMeasurin
 To examine a network's topology is to study how its elements (both nodes and edges) are arranged [ADD CITATION]. I explore each community using node and graph properties in order to address questions such as (but not limited to):
 
 \begin{itemize}
-    \item How connected are users within a community?
-    \item How connected are users to those outside their community (or communities)?
-    \item How quickly would one expect information to diffuse from the community to another?
+	\item How connected are users within a community?
+	\item How connected are users to those outside their community (or communities)?
+	\item How quickly would one expect information to diffuse from the community to another?
 \end{itemize}
 
-   I list and describe potential node and graph properties of interest \cite{yangDefiningEvaluatingNetwork2015} in Table \ref{table:graph_properties}. Some properties are concerned about \textit{internal} connectivity (e.g. average degree, internal density, average geodesic length, clustering coefficient); some are concerned about \textit{external} connectivity (e.g. expansion, cut ratio); conductance considers both internal and external connectivity. For the node properties in Table \ref{table:graph_properties} (average degree and geodesic length), I will examine them not only as a point value but also as a distribution. 
+I list and describe potential node and graph properties of interest \cite{yangDefiningEvaluatingNetwork2015} in Table \ref{table:graph_properties}. Some properties are concerned about \textit{internal} connectivity (e.g. average degree, internal density, average geodesic length, clustering coefficient); some are concerned about \textit{external} connectivity (e.g. expansion, cut ratio); conductance considers both internal and external connectivity. For the node properties in Table \ref{table:graph_properties} (average degree and geodesic length), I will examine them not only as a point value but also as a distribution.
 
 \begin{table*}
 
-  \caption{Community Network Node and Graph Properties}
-  \label{table:graph_properties}
-  
-  \begin{tabular}{ p{4cm}  p{4cm}  p{4cm} }
-  
-    \toprule
-     Property & Description & Addressed Question\\ 
-    \midrule
- Average Degree & Average number of edges per community node & How many connections can we expect a user to have? \\ 
- \hline
- Internal Density & Fraction of edges that appear between two community nodes & How connected are users to this community as opposed to outside groups?\\
-  \hline
- Expansion & Fraction of edges connecting nodes to non-community nodes & How connected are users to non-community users as opposed to same-community ones?\\
-  \hline
- Average Geodesic Length & Average distance between two community nodes & Would information travel travel quickly from one community user to another, randomly selected one?\\
-  \hline
- Clustering Coefficient & Fraction of ``closed'' community node triplets & How likely is it that three users within a community are all connected to one another?\\
-  \hline
- Conductance & Probability that of a one-step random walk starting on a community node going outside the community & How likely is it that information is traveling outside the community? \\
-  \hline
- Cut Ratio & Fraction of edges pointing outside the community over possible edges pointing outside & Do users make an active effort to engage with those in different communities?\\
-   \bottomrule
-\end{tabular}
+	\caption{Community Network Node and Graph Properties}
+	\label{table:graph_properties}
+
+	\begin{tabular}{ p{4cm}  p{4cm}  p{4cm} }
+
+		\toprule
+		Property                & Description                                                                                         & Addressed Question                                                                                 \\
+		\midrule
+		Average Degree          & Average number of edges per community node                                                          & How many connections can we expect a user to have?                                                 \\
+		\hline
+		Internal Density        & Fraction of edges that appear between two community nodes                                           & How connected are users to this community as opposed to outside groups?                            \\
+		\hline
+		Expansion               & Fraction of edges connecting nodes to non-community nodes                                           & How connected are users to non-community users as opposed to same-community ones?                  \\
+		\hline
+		Average Geodesic Length & Average distance between two community nodes                                                        & Would information travel travel quickly from one community user to another, randomly selected one? \\
+		\hline
+		Clustering Coefficient  & Fraction of ``closed'' community node triplets                                                      & How likely is it that three users within a community are all connected to one another?             \\
+		\hline
+		Conductance             & Probability that of a one-step random walk starting on a community node going outside the community & How likely is it that information is traveling outside the community?                              \\
+		\hline
+		Cut Ratio               & Fraction of edges pointing outside the community over possible edges pointing outside               & Do users make an active effort to engage with those in different communities?                      \\
+		\bottomrule
+	\end{tabular}
 \end{table*}
 
 In addition to the node and graph properties listed in Table \ref{table:graph_properties}, the following may prove relevant:
 \begin{itemize}
-    \item Each communities' size
-    \item Influential users within each community
-    \item How the communities detected through graph-based methods match up with my original user labels
-    \item Details about users who are in multiple communities
+	\item Each communities' size
+	\item Influential users within each community
+	\item How the communities detected through graph-based methods match up with my original user labels
+	\item Details about users who are in multiple communities
 \end{itemize}
 
 \subsection{Language}
 
-\subsubsection{Representative Words} 
+\subsubsection{Representative Words}
 
 What are the words that "define" a community? Here, I am interested in uncovering the words that are more likely to have been said by one community in contrast to others. Previously, \citet{monroeFightinWordsLexical2008} demonstrated that weighted log-odds ratios were effective in differentiating words typical of speech from a Republican vs. a Democrat. I plan to employ their described technique to determine each communities' identifying unigrams and bigrams. My deliverable from this work will be a table of some finite number of words with the greatest weighted log-odds ratio for each community and discussion about the arrived-upon representative words.
 
@@ -465,29 +486,31 @@ What are the words that "define" a community? Here, I am interested in uncoverin
 I explore what topics the various communities discuss in two ways:
 
 \begin{itemize}
-    \item \textit{Hashtags} Similar to how I will identify a community's representative words, I determine its representative hashtags using weighted log-odds ratios. 
-    
-    \item \textit{Topic Models} I employ \citet{zuoWordNetworkTopic2016}'s Word Network Topic Model, a topic model shown to perform better than Latent Dirichlet Allocation (LDA) [CITATION] on short, social media text, to obtain each communities' latent topics (themes underlying their common discussion points); I determine the number of topics to uncover for each community by evaluating the model's performance on topic coherence measures [CITATION] in tandem with manual review. I will summarize captured topics by reviewing each topic's most prominent features along with its tagged tweets.
-    
+	\item \textit{Hashtags} Similar to how I will identify a community's representative words, I determine its representative hashtags using weighted log-odds ratios.
+
+	\item \textit{Topic Models} I employ \citet{zuoWordNetworkTopic2016}'s Word Network Topic Model, a topic model shown to perform better than Latent Dirichlet Allocation (LDA) [CITATION] on short, social media text, to obtain each communities' latent topics (themes underlying their common discussion points); I determine the number of topics to uncover for each community by evaluating the model's performance on topic coherence measures [CITATION] in tandem with manual review. I will summarize captured topics by reviewing each topic's most prominent features along with its tagged tweets.
+
 \end{itemize}
 
 After collecting hashtags and latent topics, I will lay them out in a table and consider the communities' similarities and divergences.
 
 \section{Idea Diffusion}
 
-In this section, I detail how I probe \textit{whether} the AL helps diffuse AR ideas and \textit{how} they might do so (RQ3). 
+In this section, I detail how I probe \textit{whether} the AL helps diffuse AR ideas and \textit{how} they might do so (RQ3).
 
 I define an \textit{AR idea} as a unigram, bigram, or hashtag that has no or few appearances in the dataset prior to being used by a non-trivial\footnote{Exact number to be determined after more data inspection.} amount of AR community members. An AR idea is \textit{diffused} into a community when a non-trivial amount of community members employ it in their speech.
 
 My inquiry into AR idea diffusion is best understood in three steps. I outline them here and go into greater detail in later subsections.
 
 \begin{enumerate}
-    \item I determine ideas with origins in the AR community.
-    \item I model how ideas travel from one community to another using a multivariate Hawkes process. This model will delineate how much influence the various communities have over each other (e.g. How does what the general public talk about affect what the AR talk about?), helping determine whether the AL serve as a "conduit" for AR ideas.
-    \item I predict whether an idea with origins in the AR will make a later appearance in the general public's discourse using an estimated logistic regression model. Inspecting this model will both complement findings from the Hawkes process model and identify non-community-related factors that play into AR idea diffusion.
+	\item I determine ideas with origins in the AR community.
+	\item I model how ideas travel from one community to another using a multivariate Hawkes process. This model will delineate how much influence the various communities have over each other (e.g. How does what the general public talk about affect what the AR talk about?), helping determine whether the AL serve as a "conduit" for AR ideas.
+	\item I predict whether an idea with origins in the AR will make a later appearance in the general public's discourse using an estimated logistic regression model. Inspecting this model will both complement findings from the Hawkes process model and identify non-community-related factors that play into AR idea diffusion.
 \end{enumerate}
 
 \subsection{Detecting AR Ideas}
+
+\todo[inline, color=red]{maybe some clarification here about "idea" vs item of speech + that some other unit of speech might demonstrate itself more salient than n-grams or hashtags (e.g. framing)}
 
 I identify unigrams, bigrams, and hashtags as \textit{AR ideas} if they meet two criteria: (1) they have no or few previous appearances in the dataset prior to being used by a sizeable amount of AR community members; (2) they are not used by non-AR community members at the time of their first appearance in the data.
 
@@ -504,9 +527,9 @@ I slice my dataset into week-long bins and by community (AR, AL, and general pub
 
 \subsection{Predicting Diffusion via a Logistic Regression}
 
-I fit a logistic regression model to predict whether an AR idea will eventually be used by a non-trivial number of general public users. More specifically, this logistic regression will attempt to predict whether, within the next week, a non-trivial number of general public users will use an AR idea. 
+I fit a logistic regression model to predict whether an AR idea will eventually be used by a non-trivial number of general public users. More specifically, this logistic regression will attempt to predict whether, within the next week, a non-trivial number of general public users will use an AR idea.
 
-Out of potential models, I favor a logistic regression model for this task because of its greater ease for interpretation and inference \textit{and} it has previously demonstrated superior ability to predict future popularity of newly emergent hashtags \cite{maPredictingPopularityNewly2013}. Both contextual and content features will be included as model features. Examples of contextual features include features of the AR community graph and distance between the AR and general public communities; examples of content features include the AR idea represented as topic and sentiment vectors. 
+Out of potential models, I favor a logistic regression model for this task because of its greater ease for interpretation and inference \textit{and} it has previously demonstrated superior ability to predict future popularity of newly emergent hashtags \cite{maPredictingPopularityNewly2013}. Both contextual and content features will be included as model features. Examples of contextual features include features of the AR community graph and distance between the AR and general public communities; examples of content features include the AR idea represented as topic and sentiment vectors.
 
 As I will infer from the fitted model, I will ascertain that the logistic regression assumptions (such as independent error terms and absence of multi-collinearity) are met. Steps to meet logistic regression assumptions will include performing careful feature selection and estimating from parametric bootstraps.
 
@@ -515,35 +538,35 @@ I will calculate $\chi^2$ statistics for each feature in my fitted model to unde
 
 \begin{table}[htbp!]
 
-  \caption{Planned Checkpoint Completion Dates}
-  \label{table:timetable}
-  
-  \begin{tabular}{ l l  }
-  
-    \toprule
-     Date & Milestone\\ 
-    \midrule
-June 30, 2020 & Collect and pre-process users and tweets\\
- \hline
-July 5, 2020 & Construct graphs and perform community detection on graphs\\
-  \hline
-July 10, 2020 & Describe, compare, contrast, and visualize community topologically\\
-  \hline
-  July 20, 2020 & Describe, compare, contrast, and visualize community language use\\
-  \hline
-  July 25, 2020 & Identify AR-manufactured ideas\\
-  \hline
-  August 2, 2020 &  Model AR idea diffusion as a Hawkes process\\
-  \hline
-  August 10, 2020 & Predict diffusion via a logistic regression model\\
-    \hline
-  August 20, 2020 & Write results section of paper\\
-      \hline
-  August 30, 2020 & Write discussion section of paper\\
-        \hline
-  September 15, 2020 & Write first draft of paper\\
-   \bottomrule
-\end{tabular}
+	\caption{Planned Checkpoint Completion Dates}
+	\label{table:timetable}
+
+	\begin{tabular}{ l l  }
+
+		\toprule
+		Date               & Milestone                                                          \\
+		\midrule
+		June 30, 2020      & Collect and pre-process users and tweets                           \\
+		\hline
+		July 5, 2020       & Construct graphs and perform community detection on graphs         \\
+		\hline
+		July 10, 2020      & Describe, compare, contrast, and visualize community topologically \\
+		\hline
+		July 20, 2020      & Describe, compare, contrast, and visualize community language use  \\
+		\hline
+		July 25, 2020      & Identify AR-manufactured ideas                                     \\
+		\hline
+		August 2, 2020     & Model AR idea diffusion as a Hawkes process                        \\
+		\hline
+		August 10, 2020    & Predict diffusion via a logistic regression model                  \\
+		\hline
+		August 20, 2020    & Write results section of paper                                     \\
+		\hline
+		August 30, 2020    & Write discussion section of paper                                  \\
+		\hline
+		September 15, 2020 & Write first draft of paper                                         \\
+		\bottomrule
+	\end{tabular}
 \end{table}
 
 \section{Project Timetable}
